@@ -8,11 +8,13 @@ int main(int ac,char **argv){
   /* declaring void variables */
   (void)ac; (void)argv;
 
-  printf("%s\n",prompt);
-  lineptr = NULL;
-  getline(&lineptr, &n, stdin);
-  printf("%s\n", lineptr);
+  while(1){
+    printf("%s ",prompt);
+    lineptr = NULL;
+    getline(&lineptr, &n, stdin);
+    printf("%s\n", lineptr);
 
-  free(lineptr);
+    free(lineptr);
+  }
   return 0;
 }
