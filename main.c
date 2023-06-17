@@ -29,7 +29,7 @@ int main(int ac, char **argv){
             perror("tsh: memory allocation error");
             return (-1);
         }
-        /* copy lineptr to lineptr_copy */
+
         strcpy(lineptr_copy, lineptr);
 
         /** split the string (lineptr) into an array of words **/
